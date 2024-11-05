@@ -1,0 +1,6 @@
+Tiempo     % Total de CPU Libre % Memoria Libre % Disco Libre  
+60s        100                  67,4241                      54
+120s       99,7                 67,4354                      54
+180s       100                  67,4354                      54
+240s       100                  67,4354                      54
+300s       100                  67,4319                      54
