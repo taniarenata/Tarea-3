@@ -11,7 +11,7 @@ for i in {1..5}; do
 	cpulibre=$(top -b -n1 | grep "Cpu(s)" | awk '{print 100 - $2}'| awk -F. '{print $1}')
 	#Porcentaje de memoria libre
 	memlibre=$(free | grep Mem | awk '{print $4/$2 * 100.0}' | awk -F. '{print $1}')
-	#Porcentaje de disco libre (usar la particion raiz /)
+	#Porcentaje de disco duro libre (usar la particion raiz /)
 	discolibre=$(df -h / | grep '/' | awk '{print $5}' | tr -d '%')
 	#Imprimir los resultados en formato de tabla
 	printf "%-10s %-20s %-15s %15s\n" "$tiempo" "$cpulibre" "$memlibre" "$discolibre"
